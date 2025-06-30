@@ -27,6 +27,7 @@ export default function Home() {
     "<span>time to</span> see project one",
   ];
 
+  // define use GSAP
   useGSAP(
     () => {
       let currentCycle = -1;
@@ -136,6 +137,7 @@ export default function Home() {
   );
 
   return (
+    // Wrap whole app with ReactLenis for smooth scrolling
     <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
       <div
         className="container max-w-[100vw] overflow-hidden"
